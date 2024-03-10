@@ -50,7 +50,7 @@ contract ForkTest is Test {
     }
 
     // creates a new contract while a fork is active
-    function test_ExpectFail CreateContract() public {
+    function test_ExpectFail_CreateContract() public {
         vm.selectFork(mainnetFork);
         assertEq(vm.activeFork(), mainnetFork);
 
